@@ -1,33 +1,30 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  background-color: #282c34;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.counter-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 20em;
+  margin: 30px;
+  padding: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter-btn {
+  background-color: #ffffff;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2em;
+  height: 45px;
+  min-width: 100px;
+}
+
+.counter-btn:hover {
+  background-color: rgba(255, 255, 255, .7)
 }
