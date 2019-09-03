@@ -1,47 +1,6 @@
 import React from 'react';
 import '../css/Product.css';
 
-const product = {
-  name: 'SHOE 307',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore, quisquam quam quia natus, voluptas asperiores consectetur, repellat dolores aliquam ab doloremque! Natus, sunt obcaecati sint sed rem earum perspiciatis',
-  price: 243,
-  currency: '$',
-  image: './images/shoes-images-2.jpg',
-  images: [
-    {
-      path: './images/shoes-images-1.jpg'
-    },
-    {
-      path: './images/shoes-images-2.jpg'
-    },
-    {
-      path: './images/shoes-images-3.jpg'
-    },
-    {
-      path: './images/shoes-images-4.jpg'
-    },
-    {
-      path: './images/shoes-images-5.jpg'
-    },
-    {
-      path: './images/shoes-images-6.jpg'
-    }
-  ],
-  colors: [
-    {
-      color: '#f38ea0'
-    },
-    {
-      color: '#fff'
-    },
-    {
-      color: '#5a684f'
-    },
-    {
-      color: '#000'
-    }
-  ]
-}
 class Product extends React.Component {
 
   constructor(props) {
@@ -49,17 +8,15 @@ class Product extends React.Component {
 
     this.state = {
       selectedImagePath : null,
-      selectedColor: null,
       selectedImageClass: '',
-      cartClass: ['btn', 'btn-cart']
+      cartClass: ['btn', 'btn-cart'],
+      product: props.product
     }
   }
 
   componentDidMount() {
     this.setState(state => ({
-      selectedImagePath : product.image,
-      price: product.price,
-      currency: product.currency
+      selectedImagePath : this.state.product.image,
     })) 
   }
 
@@ -102,7 +59,7 @@ class Product extends React.Component {
                 <div className="md-2">
                   <ul>
                     {
-                      product.images.map((image, i)=> <li key={i}><img onClick={e => this.changeImage(image)} className={'thumbnail ' + (this.state.selectedImagePath === image.path ? ' thumbnail-hover' : '')} src={image.path} alt="product" /></li>)
+                      this.state.product.images.map((image, i)=> <li key={i}><img onClick={e => this.changeImage(image)} className={'thumbnail ' + (this.state.selectedImagePath === image.path ? ' thumbnail-hover' : '')} src={image.path} alt="product" /></li>)
                     }
                   </ul>
                 </div>
@@ -112,14 +69,14 @@ class Product extends React.Component {
               </div>
             </div>
             <div className="md-5 product-infos">
-              <h1 className="title">{product.name}</h1>
-              <p className="description">{product.description}</p>
+              <h1 className="title">{this.state.product.name}</h1>
+              <p className="description">{this.state.product.description}</p>
               
               <div className="color-options">
                 {
-                  product.colors.map((color, i) => <button key={i} className="color-item" style={{backgroundColor: color.color}}></button>)
+                  this.state.product.colors.map((color, i) => <button key={i} className="color-item" style={{backgroundColor: color.color}}></button>)
                 }
-                <span className="price">{this.state.currency} {this.state.price}</span>
+                <span className="price">{this.state.product.currency} {this.state.product.price}</span>
               </div>
               <div>
 
