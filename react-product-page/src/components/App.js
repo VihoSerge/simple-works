@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/App.css';
 import Product from './Product';
 import Header from './Header';
 import Footer from './Footer';
@@ -60,36 +59,6 @@ class App extends React.Component {
     }
     
   }
-
-  // componentDidMount() {
-  //   this.setState(state => ({
-  //     selectedImagePath : product.image,
-  //     price: product.price,
-  //     currency: product.currency
-  //   })) 
-  // }
-
-  // changeImage = (image) => {
-  //   this.setState(state => ({
-  //     selectedImagePath: image.path
-  //   }))
-  // }
-
-  // addToCart = (e) => {
-  //   this.setState(state => ({
-  //     cartClass: [...state.cartClass, 'is-added']
-  //   }));
-
-  //   setTimeout(() => {
-  //     this.setState(state => {
-  //       state.cartClass.pop();
-  //       const arr = [...state.cartClass];
-  //       return {
-  //         arr
-  //       }
-  //     });
-  //   }, 1000)
-  // }  
 
   addToCart = () => {
     this.setState({cartCount: this.state.cartCount + 1});

@@ -204,3 +204,7 @@
     color: #f7be16;
     margin-left: 80px;
   }
+
+  .product-infos .title {
+    font-size: 3em;
+  }
