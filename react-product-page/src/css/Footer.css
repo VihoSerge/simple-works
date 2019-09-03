@@ -1,0 +1,31 @@
+.footer {
+    padding: 15px 0 50px;
+    width: 100%;
+}
+
+.footer-links .nav-menu .nav-menu-item {
+    color: #a4a4a4;
+}
+
+.footer-links .nav-menu .nav-menu-item:first-child {
+    padding-left: 0;
+}
+
+.footer-social-icon {
+    width: 25px;
+    fill: #314d5d;
+}
+
+.footer-link {
+    color: #314d5d;
+}
+
+.footer-link:hover {
+    color: #a4a4a4
+}
+
+@media (max-width: 992px) {
+    footer {
+        display: none;
+    }
+}
