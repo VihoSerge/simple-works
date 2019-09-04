@@ -1,0 +1,110 @@
+[
+    {
+        "name": "SHOE 307",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore, quisquam quam quia natus, voluptas asperiores consectetur, repellat dolores aliquam ab doloremque! Natus, sunt obcaecati sint sed rem earum perspiciatis",
+        "price": 243,
+        "currency": "$",
+        "image": "./images/shoes-images-2.jpg",
+        "images": [
+          {
+            "path": "./images/shoes-images-1.jpg"
+          },
+          {
+            "path": "./images/shoes-images-2.jpg"
+          },
+          {
+            "path": "./images/shoes-images-3.jpg"
+          },
+          {
+            "path": "./images/shoes-images-4.jpg"
+          },
+          {
+            "path": "./images/shoes-images-5.jpg"
+          },
+          {
+            "path": "./images/shoes-images-6.jpg"
+          }
+        ],
+        "colors": [
+          {
+            "color": "#f38ea0"
+          },
+          {
+            "color": "#fff"
+          },
+          {
+            "color": "#5a684f"
+          },
+          {
+            "color": "#000"
+          }
+        ]
+      },
+      {
+        "name": "SHOE 308",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore, quisquam quam quia natus, voluptas asperiores consectetur, repellat dolores aliquam ab doloremque! Natus, sunt obcaecati sint sed rem earum perspiciatis",
+        "price": 145,
+        "currency": "$",
+        "image": "./images/shoe-308-1.jpg",
+        "images": [
+          {
+            "path": "./images/shoe-308-1.jpg"
+          },
+          {
+            "path": "./images/shoe-308-2.jpg"
+          },
+          {
+            "path": "./images/shoe-308-3.jpg"
+          },
+          {
+            "path": "./images/shoe-308-4.jpg"
+          }
+        ],
+        "colors": [
+          {
+            "color": "#818382"
+          },
+          {
+            "color": "#8a606b"
+          },
+          {
+            "color": "#060f35"
+          },
+          {
+            "color": "#585d5e"
+          }
+        ]
+      },
+      {
+        "name": "SHOE 309",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore, quisquam quam quia natus, voluptas asperiores consectetur, repellat dolores aliquam ab doloremque! Natus, sunt obcaecati sint sed rem earum perspiciatis",
+        "price": 200,
+        "currency": "$",
+        "image": "./images/shoe-309-1.jpg",
+        "images": [
+          {
+            "path": "./images/shoe-309-1.jpg"
+          },
+          {
+            "path": "./images/shoe-309-2.jpg"
+          },
+          {
+            "path": "./images/shoe-309-3.jpg"
+          },
+          {
+            "path": "./images/shoe-309-4.jpg"
+          }
+        ],
+        "colors": [
+          {
+            "color": "#cd382d"
+          },
+          {
+            "color": "#4e4d51"
+          },
+          {
+            "color": "#29292b"
+          }
+        ]
+      }
+]
