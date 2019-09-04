@@ -1,9 +1,11 @@
-.navbar {
-    padding: 1.5rem 0;
+.header {
+    min-height: 60px;
+    padding: 10px;
+    width: 100%;
 }
 
-.header-top .navbar {
-    padding: 0;
+.navbar {
+    padding: 1.5rem 0;
 }
 
 .nav-menu-item {
@@ -12,15 +14,9 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .nav-menu-item.active {
     color: #f7be16;
-}
-
-.header {
-    margin-bottom: 40px;
-    min-height: 60px;
-    padding: 10px;
-    width: 100%;
 }
 
 .nav-menu-item-icon {
@@ -36,10 +32,10 @@
 }
 
 .nav-logo svg {
-    margin-bottom: -5px;
-    margin-left: 6px;
     fill: #fff;
     height: 40px;
+    margin-bottom: -5px;
+    margin-left: 6px;
     width: 40px;
 }
 
@@ -50,6 +46,52 @@
 .nav-search svg {
     fill: #fff;
     width: 16px;
+}
+
+.shopping-cart {
+    position: relative;
+}
+
+
+li.shopping-cart::before {
+    content: '';
+    background-color: #f7be16;
+    border-radius: 50%; 
+    height: 0;
+    left: 41%;
+    position: absolute;
+    transition: all 0.1s ease-out;
+    top: 26%;
+    width: 0px;
+}
+
+li.shopping-cart.is-added::before {
+    content: '';
+    background-color: #f7be16;
+    border-radius: 50%; 
+    height: 55px;
+    left: 10px;
+    position: absolute;
+    transition: all 0.25s ease-in; 
+    top: -12px;
+    width: 55px;
+}
+
+li.shopping-cart.is-added.nav-menu-item {
+    color: #fff;;
+}
+
+li.shopping-cart.is-added.nav-menu-item svg {
+    fill: #fff;
+    position: relative;
+}
+
+.cart-item-count {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 @media (min-width: 992px) {
@@ -68,50 +110,3 @@
     }   
 }
 
-.shopping-cart {
-    position: relative;
-}
-
-
-li.shopping-cart::before {
-    content: '';
-    background-color: #f7be16;
-    border-radius: 50%; 
-    display: block;
-    height: 0;
-    left: 41%;
-    position: absolute;
-    transition: all 0.1s ease-out;
-    top: 26%;
-    width: 0px;
-    z-index: -1;
-}
-
-li.shopping-cart.is-added::before {
-    content: '';
-    background-color: #f7be16;
-    border-radius: 50%; 
-    display: block;
-    height: 55px;
-    left: 10px;
-    position: absolute;
-    transition: all 0.25s ease-in; 
-    top: -12px;
-    width: 55px;
-    z-index: -1;
-}
-
-li.shopping-cart.is-added.nav-menu-item {
-    color: #fff;;
-}
-li.shopping-cart.is-added.nav-menu-item svg {
-    color: #fff;
-    fill: #fff;
-}
-.cart-item-count {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 18px;
-    font-weight: normal;
-}

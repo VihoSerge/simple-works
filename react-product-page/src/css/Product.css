@@ -75,7 +75,7 @@
     transform: translateX(50%) translateY(-50%);
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
-    /* transition: transform 0.3s; */
+    transition: transform 0.3s;
     fill: #f7be16;
   }
   

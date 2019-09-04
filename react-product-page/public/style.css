@@ -132,7 +132,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted;
 }
 
 
@@ -288,7 +288,7 @@ template {
 }
 
 .nav-tooggle span {
-  background-color: #fff;
+  background-color: #f7be16;
   height: 2px;
   margin-top: 5px;
   width: 20px;
