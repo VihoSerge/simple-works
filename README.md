@@ -12,6 +12,11 @@
 
 ![Image](./react-product-page/public/preview.gif)
 
+### 03 Africa Map
+[Link](https://github.com/VihoSerge/simple-wrorks/tree/master/react-africa-map)
+
+![Image](./react-africa-map/public/preview.gif)
+
 ## Authors
 
 * **Viho Serge** - [@VihoSerge](https://github.com/VihoSerge)
