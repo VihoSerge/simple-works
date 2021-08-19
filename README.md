@@ -1,4 +1,4 @@
-# simple-wrorks
+# simple-works
 
 ## Proejcts overview
 
